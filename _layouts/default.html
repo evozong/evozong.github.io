@@ -14,12 +14,10 @@
 <body>
   <!-- Start Top Bar -->
   <nav>
-    <div class="nav-profile">
-      <a href="{{ "/" | relative_url }}">
-        <img class="nav-profile-pic" src="assets/img/profile.jpg" />
-        <strong>Zongyao Mao</strong>
-      </a>
-    </div>
+    <a class="nav-profile" href="{{ "/" | relative_url }}">
+      <img class="nav-profile-pic" src="assets/img/profile.jpg" />
+      <strong>Zongyao Mao</strong>
+    </a>
     <div class="nav-right">
       <ul>
         <li><a href="{{ "blogIndex.html" | relative_url }}">Blog Index</li>
@@ -47,7 +45,7 @@
 
   <!-- Keep content in center -->
   <div class="row medium-8 large-7 columns">
-    {{ content }}
+{{ content }}
   </div>
 </body>
 
