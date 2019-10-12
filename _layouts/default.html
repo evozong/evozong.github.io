@@ -1,53 +1,54 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html class="no-js" lang="en">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zongyao Mao</title>
+  {% seo %}
+  <!-- TODO: Minify for production -->
+  <link rel="stylesheet" href="assets/css/foundation.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-  </head>
-  <body>
-
-      <header>
-        <h1><a href="{{ "/" | relative_url }}">{{ page.title | default: site.title | default: site.github.repository_name }}</a></h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-      </header>
-
-      <div id="banner">
-        <a href="{{ "testpage.html" | relative_url }}" class="button fork"><strong>TestPage</strong></a>
-        <a href="{{ "about" | relative_url }}" class="button fork">About me</a>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        {{ content }}
-
-      </section>
-      <footer>
-        <p><small>Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-      </footer>
+<body>
+  <!-- Start Top Bar -->
+  <nav>
+    <div class="nav-profile">
+      <a href="{{ "/" | relative_url }}">
+        <img class="nav-profile-pic" src="assets/img/profile.jpg" />
+        <strong>Zongyao Mao</strong>
+      </a>
     </div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="{{ "blogIndex.html" | relative_url }}">Blog Index</li>
+        <li><a href="{{ "about.html" | relative_url }}">About</a></li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/zongyaomao?trk=profile-badge" target="_blank">
+            <img src="assets/img/LI-In-Bug.png" />
+          </a>
+          <a href="https://github.com/evozong" target="_blank">
+            <img src="assets/img/GitHub-Mark-Light-64px.png" />
+          </a>
+          <a href="https://www.facebook.com/evozong" target="_blank">
+            <img src="assets/img/f_logo_RGB-Blue_58.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div style="height:100px">
+    <!-- This is a spacer because top-bar is pegged -->
+  </div>
+  <!-- End Top Bar -->
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
+  <!-- Keep content in center -->
+  <div class="row medium-8 large-7 columns">
+    {{ content }}
+  </div>
+</body>
+
 </html>
