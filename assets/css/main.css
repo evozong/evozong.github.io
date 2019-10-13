@@ -56,11 +56,8 @@ nav .social a:hover {
 
 .blog-post {
     margin-bottom: 80px;
-    padding-bottom: 45px;
-    border-bottom: 3px solid #5d576b;
-    border-radius: 15px;
-}
-
-.blog-post:last-child {
-    border-bottom: none;
+    padding: 0px 15px 45px 5px;
+    border-bottom: 2px groove #5d576b;
+    border-right: 2px groove #5d576b;
+    border-radius: 10px;
 }
