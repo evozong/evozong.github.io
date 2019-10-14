@@ -1,0 +1,87 @@
+/*--- Overrides to foundation.css ---*/
+.top-bar {
+  position: sticky;
+  top: 0px;
+}
+.top-bar .top-bar-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: auto;
+}
+.top-bar .top-bar-right {
+  display: flex;
+  flex-flow: row nowrap;
+}
+/*--- End overrides ---*/
+
+.top-bar .top-bar-nowrap-right {
+  display: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 40em) {
+  .top-bar .top-bar-nowrap-right {
+    display: flex;
+  }
+  .top-bar .top-bar-right {
+    display: none;
+  }
+  .top-bar .top-bar-right.burger-toggle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: right;
+    justify-content: right;
+    text-align: right;
+  }
+}
+
+nav .nav-profile-pic {
+  height: 2.4em;
+  border-radius: 50%;
+}
+
+/*--- Hamburger ---*/
+nav .nav-hamburger {
+  display: inline-block; /*TODO for now, original=None*/
+  cursor: pointer;
+  margin: 0px 5px;
+}
+nav .bar1, nav .bar2, nav .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  border-radius: 2px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+nav .burger-close .bar1 {
+  -webkit-transform: rotate(-135deg) translate(-8px, -8px);
+  transform: rotate(-135deg) translate(-8px, -8px);
+}
+nav .burger-close .bar2 {
+  -webkit-transform: scale(0,0);
+  transform: scale(0,0);
+}
+nav .burger-close .bar3 {
+  -webkit-transform: rotate(135deg) translate(-8px, 8px);
+  transform: rotate(135deg) translate(-8px, 8px);
+}
+
+/*--- Social ---*/
+nav .nav-social {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-flow: row nowrap;
+}
+nav a {
+  padding: 0.4em;
+}
+nav .nav-social img {
+  height: 1em;
+}
