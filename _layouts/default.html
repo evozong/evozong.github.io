@@ -15,46 +15,52 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zongyao Mao</title>
-  {% seo %}
-  <!-- TODO: Minify for production -->
-  <link rel="stylesheet" href="{{ "assets/css/foundation.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+
+{% seo %}
+
+  <link rel="stylesheet" href="{{ "assets/css/uikit.min.css" | relative_url }}" />
+  <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}" />
+
+  <script src="{{ "assets/js/uikit.min.js" | relative_url }}"></script>
+  <script src="{{ "assets/js/uikit-icons.min.js" | relative_url }}"></script>
+  <script src="{{ "assets/js/app.js" | relative_url }}"></script>
 </head>
 
 <body>
-  <!-- Start Top Bar -->
-  <nav>
-    <a class="nav-profile" href="{{ "/" | relative_url }}">
-      <img class="nav-profile-pic" src="{{ "assets/img/profile.jpg" | relative_url }}" />
+  <nav class="uk-flex uk-flex-wrap">
+    <a class="nav-profile uk-flex-inline" href="{{ "/" | relative_url }}">
+      <img class="uk-border-circle" src="{{ "assets/img/profile.jpg" | relative_url }}" />
       <strong>Zongyao Mao</strong>
     </a>
-    <div class="nav-right">
-      <ul>
-        <li><a href="{{ "blogIndex.html" | relative_url }}">Blog Index</a></li>
-        <li><a href="{{ "about.html" | relative_url }}">About</a></li>
-      </ul>
-      <ul class="social">
-        <li>
-          <a href="https://www.linkedin.com/in/zongyaomao?trk=profile-badge" target="_blank">
-            <img src="{{ "assets/img/LI-In-Bug.png" | relative_url }}" />
-          </a>
-          <a href="https://github.com/evozong" target="_blank">
-            <img src="{{ "assets/img/GitHub-Mark-Light-64px.png" | relative_url }}" />
-          </a>
-          <a href="https://www.facebook.com/evozong" target="_blank">
-            <img src="{{ "assets/img/f_logo_RGB-Blue_58.png" | relative_url }}" />
-          </a>
-        </li>
-      </ul>
+    <div class="nav-burger-outer uk-flex-inline uk-flex uk-flex-row-reverse uk-margin-auto-left">
+      <div class="nav-burger" onclick="toggleHamburger(this,'nav-right-toggle')">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    <div class="nav-right uk-flex-inline" id="nav-right-toggle">
+      <div class="nav-social uk-flex-inline uk-flex-row-reverse">
+        <a href="https://www.facebook.com/evozong" target="_blank">
+          <img src="{{ "assets/img/f_logo_RGB-Blue_58.png" | relative_url }}" />
+        </a>
+        <a href="https://github.com/evozong" target="_blank">
+          <img src="{{ "assets/img/GitHub-Mark-Light-64px.png" | relative_url }}" />
+        </a>
+        <a href="https://www.linkedin.com/in/zongyaomao?trk=profile-badge" target="_blank">
+          <img src="{{ "assets/img/LI-In-Bug.png" | relative_url }}" />
+        </a>
+      </div>
+      <div class="nav-menu uk-flex-inline uk-flex-row-reverse">
+        <a href="{{ "blogIndex.html" | relative_url }}">Blog Index</a>
+      </div>
+      <div class="nav-menu uk-flex-inline uk-flex-row-reverse">
+        <a href="{{ "about.html" | relative_url }}">About</a>
+      </div>
     </div>
   </nav>
-  <div style="height:100px">
-    <!-- This is a spacer because top-bar is pegged -->
-  </div>
-  <!-- End Top Bar -->
 
-  <!-- Keep content in center -->
-  <div class="row medium-8 large-7 columns">
+  <div class="content uk-flex uk-flex-column">
 {{ content }}
   </div>
 </body>
