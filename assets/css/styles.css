@@ -2,6 +2,9 @@
 .uk-flex-inline {
   margin: auto 0; /* Vertical center all flex items */
 }
+html {
+  background-color: #fff8ef;
+}
 nav a:hover {
   text-decoration: none; /* Remove default decoration only in nav */
 }
@@ -34,9 +37,6 @@ nav .burger-close .bar3 {
 }
 /*--- End Hamburger ---*/
 
-html {
-  background-color: #fff8ef;
-}
 nav {
   color: #e2efde;
   background-color: #0e3b43;
