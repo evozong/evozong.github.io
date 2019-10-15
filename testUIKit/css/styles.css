@@ -1,0 +1,114 @@
+/*--- Overrides ---*/
+.uk-flex-inline {
+  margin: auto 0; /* Vertical center all flex items */
+}
+nav a:hover {
+  text-decoration: none; /* Remove default decoration only in nav */
+}
+/*--- End Overrides ---*/
+
+/*--- Hamburger ---*/
+nav .nav-burger {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+nav .bar1, nav .bar2, nav .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+nav .burger-close .bar1 {
+  -webkit-transform: rotate(-135deg) translate(-8px, -8px);
+  transform: rotate(-135deg) translate(-8px, -8px);
+}
+nav .burger-close .bar2 {
+  -webkit-transform: scale(0,0);
+  transform: scale(0,0);
+}
+nav .burger-close .bar3 {
+  -webkit-transform: rotate(135deg) translate(-8px, 8px);
+  transform: rotate(135deg) translate(-8px, 8px);
+}
+/*--- End Hamburger ---*/
+
+body {
+  background-color: #fff8ef;
+}
+nav {
+  color: #e2efde;
+  background-color: #0e3b43;
+  margin-bottom: 30px;
+  padding: 0.5em;
+  position: sticky;
+  top: 0px;
+  border-bottom: 5px solid #5d576b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-profile > * {
+  margin: auto 5px;
+}
+.nav-profile img {
+  height: 2.1em;
+}
+nav .nav-social img {
+  height: 1em;
+}
+nav .nav-burger {
+  display: none;
+}
+nav .nav-right a {
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+}
+nav .nav-right.burger-toggle {
+  display: inline-flex;
+}
+nav .nav-menu a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 500px) {
+  /* Show burger */
+  nav .nav-burger {
+    display: inline-block;
+  }
+  /* Move Menu to next level in flex, then hide it */
+  nav .nav-right {
+    min-width: 100%;
+    flex-flow: column nowrap;
+    display: none;
+  }
+  /* Change the side that shows link hovers */
+  nav .nav-menu a:hover {
+    border-right: 3px solid #fff;
+    border-bottom: none;
+  }
+}
+
+/* Dynamic resizing content width */
+.content {
+  width: calc((((100% - 40em) / (75 - 40) * (52.5 - 36))) + 36em);
+  margin: 0 auto;
+}
+@media (max-width: 40em) {
+  .content {
+    width: 90%;
+  }
+}
+@media (min-width: 75em) {
+  .content {
+    width: 52.5em;
+  }
+}
+
+.blog-post {
+  margin-bottom: 80px;
+  padding: 0px 15px 45px 5px;
+  border-bottom: 2px groove #5d576b;
+  border-right: 2px groove #5d576b;
+  border-radius: 10px;
+}
