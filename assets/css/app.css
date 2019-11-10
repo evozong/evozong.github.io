@@ -1,5 +1,5 @@
 html {
-  background-color: #fff8ef;
+  background-color: #fff;
 }
 
 img {
@@ -9,7 +9,7 @@ img {
 }
 
 a, a:visited {
-  color: blue;
+  color: #1B4F7C;
   text-decoration: none;
 }
 a:hover {
@@ -47,13 +47,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
 
-  color: #e2efde;
-  background-color: #0e3b43;
+  background-color: #BFC0C0;
   margin-bottom: 30px;
   padding: 0.5em;
   position: sticky;
   top: 0px;
-  border-bottom: 5px solid #5d576b;
+  border-bottom: 5px solid #545E75;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
@@ -61,7 +60,7 @@ nav {
   font-weight: bold;
 }
 nav a, nav a:visited, nav a:hover {
-  color: #FFF;
+  color: #253031;
   text-decoration: none; /* Remove default decoration only in nav */
 }
 nav > * {
