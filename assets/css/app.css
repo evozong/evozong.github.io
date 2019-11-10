@@ -47,15 +47,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
 
-  background-color: #BFC0C0;
+  background-color: #fff;
   margin-bottom: 30px;
   padding: 0.5em;
   position: sticky;
   top: 0px;
-  border-bottom: 5px solid #545E75;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -88,7 +84,7 @@ nav .nav-burger {
 nav .bar1, nav .bar2, nav .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #fff;
+  background-color: #253031;
   border-radius: 2px;
   margin: 6px 0;
   transition: 0.4s;
@@ -127,6 +123,11 @@ nav .nav-menu a:hover {
 }
 
 @media (max-width: 500px) {
+  nav {
+    border-bottom: 3px solid #545E75;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
   /* Show burger */
   nav .nav-burger {
     display: inline-block;
