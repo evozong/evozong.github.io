@@ -25,3 +25,42 @@
 <p>Followed by a p</p>
 <h6><small>This is H6 small</small></h6>
 <p>Followed by a p</p>
+
+<h1>Lists</h1>
+- Bulleted
+- List
+
+1. Numbered
+  - With bulleted
+  - Subpoints?
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link text]({{"index.html" | relative_url}}) and ![Image AltText]({{"assets/img/profile.jpg1" | relative_url}})
+
+Or a linked image:
+[![me]({{"assets/img/profile.jpg" | relative_url}})](https://evozong.github.io){:target="_blank"}
+
+
+# Quoting Yoda
+> "Do or do not, there is no try"
+>
+>  \- Master Yoda
+
+# Code examples
+```C++
+#include<iostream>  
+  
+using namespace std; 
+  
+// main function - 
+// where the execution of program begins 
+int main() 
+{ 
+    // prints hello world 
+    cout<<"Hello World"; 
+      
+    return 0; 
+} 
+```
