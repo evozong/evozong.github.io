@@ -18,29 +18,27 @@
 
 {% seo %}
 
-  <link rel="stylesheet" href="{{ "assets/css/uikit.min.css" | relative_url }}" />
-  <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}" />
-
-  <script src="{{ "assets/js/uikit.min.js" | relative_url }}"></script>
-  <script src="{{ "assets/js/uikit-icons.min.js" | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ "assets/css/normalize.min.css" | relative_url }}" />
+  <link rel="stylesheet" href="{{ "assets/css/app.css" | relative_url }}" />
   <script src="{{ "assets/js/app.js" | relative_url }}"></script>
 </head>
 
 <body>
-  <nav class="uk-flex uk-flex-wrap">
-    <a class="nav-profile uk-flex-inline" href="{{ "/" | relative_url }}">
-      <img class="uk-border-circle" src="{{ "assets/img/profile.jpg" | relative_url }}" />
+  <nav>
+    <a class="nav-profile" href="{{ "/" | relative_url }}">
+      <img class="border-circle" src="{{ "assets/img/profile.jpg" | relative_url }}" />
       <strong>Zongyao Mao</strong>
     </a>
-    <div class="nav-burger-outer uk-flex-inline uk-flex uk-flex-row-reverse uk-margin-auto-left">
+    <div class="nav-center"></div>
+    <div class="nav-burger-outer">
       <div class="nav-burger" onclick="toggleHamburger(this,'nav-right-toggle')">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </div>
-    <div class="nav-right uk-flex-inline" id="nav-right-toggle">
-      <div class="nav-social uk-flex-inline uk-flex-row-reverse">
+    <div class="nav-right" id="nav-right-toggle">
+      <div class="nav-social">
         <a href="https://www.facebook.com/evozong" target="_blank">
           <img src="{{ "assets/img/f_logo_RGB-Blue_58.png" | relative_url }}" />
         </a>
@@ -51,16 +49,16 @@
           <img src="{{ "assets/img/LI-In-Bug.png" | relative_url }}" />
         </a>
       </div>
-      <div class="nav-menu uk-flex-inline uk-flex-row-reverse">
+      <div class="nav-menu">
         <a href="{{ "blogIndex.html" | relative_url }}">Blog Index</a>
       </div>
-      <div class="nav-menu uk-flex-inline uk-flex-row-reverse">
+      <div class="nav-menu">
         <a href="{{ "about.html" | relative_url }}">About</a>
       </div>
     </div>
   </nav>
 
-  <div class="content uk-flex uk-flex-column">
+  <div class="content">
 {{ content }}
   </div>
 </body>

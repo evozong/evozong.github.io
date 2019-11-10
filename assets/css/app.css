@@ -1,17 +1,84 @@
-/*--- Overrides ---*/
-.uk-flex-inline {
-  margin: auto 0; /* Vertical center all flex items */
-}
 html {
   background-color: #fff8ef;
 }
-nav a:hover {
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+a, a:visited {
+  color: blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: .2em 0;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.75em;
+}
+h6 {
+  font-size: 0.5em;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  color: #e2efde;
+  background-color: #0e3b43;
+  margin-bottom: 30px;
+  padding: 0.5em;
+  position: sticky;
+  top: 0px;
+  border-bottom: 5px solid #5d576b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  font-size: 1.1em;
+  font-weight: bold;
+}
+nav a, nav a:visited {
+  color: #FFF;
   text-decoration: none; /* Remove default decoration only in nav */
 }
-/*--- End Overrides ---*/
+nav > * {
+  display: inline-flex;
+  margin: auto 0; /* Vertical center all flex items */
+}
+
+.nav-profile > * {
+  margin: auto 5px;
+}
+.nav-profile img {
+  height: 2.1em;
+}
+
+.nav-center {
+  margin: auto !important;
+}
 
 /*--- Hamburger ---*/
 nav .nav-burger {
+  display: none;
   cursor: pointer;
   margin: 0px 5px;
 }
@@ -37,32 +104,17 @@ nav .burger-close .bar3 {
 }
 /*--- End Hamburger ---*/
 
-nav {
-  color: #e2efde;
-  background-color: #0e3b43;
-  margin-bottom: 30px;
-  padding: 0.5em;
-  position: sticky;
-  top: 0px;
-  border-bottom: 5px solid #5d576b;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.nav-profile > * {
-  margin: auto 5px;
-}
-.nav-profile img {
-  height: 2.1em;
-}
-nav .nav-social img {
-  height: 1em;
-}
-nav .nav-burger {
-  display: none;
+nav .nav-right > * {
+  display: inline-flex;
+  margin: auto 0; /* Vertical center all flex items */
+  flex-direction: row-reverse;
 }
 nav .nav-right a {
   padding: 0.2em 0.5em;
   font-weight: bold;
+}
+nav .nav-social img {
+  height: 1em;
 }
 nav .nav-right.burger-toggle {
   display: inline-flex;
@@ -89,8 +141,11 @@ nav .nav-menu a:hover {
   }
 }
 
-/* Dynamic resizing content width */
+/* Content */
 .content {
+  display: flex;
+  flex-direction: column;
+  /* Width is dynamically resized */
   width: calc((((100% - 40em) / (75 - 40) * (52.5 - 36))) + 36em);
   margin: 0 auto;
 }
@@ -111,4 +166,10 @@ nav .nav-menu a:hover {
   border-bottom: 2px groove #5d576b;
   border-right: 2px groove #5d576b;
   border-radius: 10px;
+}
+.postTitle {
+  font-size: 2.5em;
+}
+.postDate {
+  margin-bottom: 2em;
 }
