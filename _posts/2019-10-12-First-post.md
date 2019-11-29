@@ -43,7 +43,7 @@ Or a linked image:
 [![me]({{"assets/img/profile.jpg" | relative_url}})](https://evozong.github.io){:target="_blank"}
 
 
-# Quoting Yoda
+# (H1) Quoting Yoda
 > "Do or do not, there is no try"
 >
 >  \- Master Yoda
@@ -52,7 +52,7 @@ Or a linked image:
 ```C++
 #include<iostream>  
   
-using namespace std; 
+using namespace std;
   
 // main function - 
 // where the execution of program begins 
@@ -64,3 +64,8 @@ int main()
     return 0; 
 } 
 ```
+## (H2) Here's a picture
+![Github Logo](https://placehold.it/850x350)
+
+## And a link
+[Sudo make me a sandwich]({{ "/assets/img/Github-Mark-64px.png" | relative_url }})
