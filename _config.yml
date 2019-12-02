@@ -55,6 +55,7 @@ defaults:
       path: "" # All files in the project
     values:
       layout: "default"
+      timezone: Etc/UTC
   -
     scope:
       path: "_posts"
