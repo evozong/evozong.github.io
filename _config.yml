@@ -58,7 +58,8 @@ defaults:
       timezone: Etc/UTC
   -
     scope:
-      path: "_posts"
+      path: ""
+      type: "posts"
     values:
       layout: "post"
       permalink: /posts/:year-:month-:day-:title:output_ext
