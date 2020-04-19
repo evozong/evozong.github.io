@@ -1,4 +1,5 @@
 ---
+title: Post formatting
 ---
 
 <h1>This is H1</h1>
