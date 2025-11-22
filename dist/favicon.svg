@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="256" height="256"
+     viewBox="0 0 256 256">
+
+  <!-- Face group -->
+  <g id="face">
+    <!-- Neck -->
+    <path d="M110 166
+             L146 166
+             L146 196
+             Q128 208 110 196
+             Z"
+          fill="#F7C596"/>
+
+    <!-- Head / face -->
+    <path d="M72 104
+             Q72 64 96 44
+             Q120 26 144 30
+             Q176 36 192 64
+             Q204 84 204 112
+             Q204 168 160 192
+             Q144 200 128 200
+             Q112 200 96 192
+             Q72 180 72 136
+             Z"
+          fill="#F7C596"/>
+  </g>
+
+  <!-- Hair & outer silhouette -->
+  <g id="hair">
+    <!-- Main hair mass -->
+    <path d="M64 108
+             Q64 68 88 44
+             Q116 16 156 24
+             Q184 30 204 56
+             Q216 72 216 104
+             L216 120
+             Q200 112 182 110
+             Q156 108 132 112
+             Q110 116 92 124
+             Q78 130 64 140
+             Z"
+          fill="#000000"/>
+
+    <!-- Left side hair / outline -->
+    <path d="M72 104
+             Q72 80 84 62
+             Q94 48 110 40
+             Q96 44 88 52
+             Q76 66 72 88 Z"
+          fill="#000000"/>
+  </g>
+
+  <!-- Ears -->
+  <g id="ears" fill="#F7C596">
+    <path d="M72 120
+             Q64 120 64 136
+             Q64 152 72 156
+             Q76 148 76 136
+             Q76 124 72 120 Z"/>
+    <path d="M192 120
+             Q200 120 200 136
+             Q200 152 192 156
+             Q188 148 188 136
+             Q188 124 192 120 Z"/>
+  </g>
+
+  <!-- Glasses -->
+  <g id="glasses" fill="none" stroke="#C4CAD0" stroke-width="4" stroke-linecap="round">
+    <!-- Left lens -->
+    <rect x="88" y="104" width="40" height="26" rx="8" ry="8"/>
+    <!-- Right lens -->
+    <rect x="128" y="104" width="40" height="26" rx="8" ry="8"/>
+    <!-- Bridge -->
+    <line x1="128" y1="116" x2="128" y2="116"/>
+    <line x1="128" y1="117" x2="128" y2="117"/>
+    <line x1="128" y1="116" x2="128" y2="116"/>
+    <line x1="128" y1="116" x2="128" y2="116"/>
+    <line x1="128" y1="116" x2="128" y2="116"/>
+    <line x1="128" y1="117" x2="128" y2="117"/>
+    <!-- Actual visible bridge -->
+    <line x1="128" y1="117" x2="128" y2="117"/>
+    <line x1="108" y1="117" x2="148" y2="117"/>
+  </g>
+
+  <!-- Eyes -->
+  <g id="eyes" fill="#000000">
+    <circle cx="104" cy="118" r="4.5"/>
+    <circle cx="152" cy="118" r="4.5"/>
+  </g>
+
+  <!-- Eyebrows -->
+  <g id="eyebrows" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round">
+    <path d="M94 104 Q104 100 114 104"/>
+    <path d="M142 104 Q152 100 162 104"/>
+  </g>
+
+  <!-- Nose -->
+  <g id="nose" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round">
+    <path d="M128 122
+             Q124 134 130 144"/>
+  </g>
+
+  <!-- Mouth -->
+  <g id="mouth">
+    <!-- Outer mouth -->
+    <path d="M104 152
+             Q128 166 152 152
+             Q144 170 128 174
+             Q112 170 104 152 Z"
+          fill="#000000"/>
+
+    <!-- Inner white smile -->
+    <path d="M112 154
+             Q128 164 144 154
+             Q136 162 128 164
+             Q120 162 112 154 Z"
+          fill="#FFFFFF"/>
+  </g>
+
+  <!-- Shirt / shoulders -->
+  <g id="shirt" fill="#000000">
+    <path d="M64 196
+             Q96 182 128 182
+             Q160 182 192 196
+             L224 228
+             L32 228
+             Z"/>
+  </g>
+</svg>
