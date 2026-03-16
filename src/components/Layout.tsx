@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -7,7 +6,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <header className="nav">
         <div className="nav-inner">
           <div className="nav-left">
-            <a href="/" style={{ textDecoration: "none" }}>
+            <a href="/" style={{ textDecoration: 'none' }}>
               <span className="logo">Zongyao Mao</span>
             </a>
           </div>
@@ -17,7 +16,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <a href="/#experience">Experience</a>
             <a href="/#projects">Projects</a>
             <a href="/#contact">Contact</a>
-            <Link to="/blog">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </nav>
         </div>
       </header>
