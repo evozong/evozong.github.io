@@ -14,8 +14,12 @@ const DESCRIPTION_LENGTH = 160;
 
 const postsDir = path.join(process.cwd(), 'src', 'posts');
 
-function toTitleCase(slug: string): string {
-  return slug
+function extractTitle(content: string, fallbackSlug: string): string {
+  const firstLine = content.split('\n')[0];
+  if (firstLine.startsWith('# ')) {
+    return firstLine.slice(2).trim();
+  }
+  return fallbackSlug
     .split('-')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
@@ -47,7 +51,7 @@ export const posts: PostMeta[] = fs
     return {
       slug: filename.replace(/\.md$/, ''),
       date,
-      title: toTitleCase(titleSlug),
+      title: extractTitle(content, titleSlug),
       description: extractDescription(content),
       content,
     };
