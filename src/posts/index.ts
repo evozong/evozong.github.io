@@ -19,7 +19,7 @@ export const posts: PostMeta[] = [
     title: 'Hello World!',
     date: '2026-03-16',
     description: 'First post on my new blog — what to expect and a bit about me.',
-    content: readPost('hello-world.md'),
+    content: readPost('2026-03-16-hello-world.md'),
   },
 ];
 
