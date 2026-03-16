@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import Script from 'next/script';
 
 type Project = {
   name: string;
@@ -127,19 +126,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <aside className="hero-card">
-          <Script
-            src="https://platform.linkedin.com/badges/js/profile.js"
-            strategy="lazyOnload"
-          />
-          <div
-            className="LI-profile-badge"
-            data-version="v1"
-            data-size="medium"
-            data-locale="en_US"
-            data-type="vertical"
-            data-theme="light"
-            data-vanity="zongyaomao"
-          />
+          <img src="/assets/profile.jpg" alt="Zongyao Mao" className="profile-photo" />
         </aside>
       </section>
 

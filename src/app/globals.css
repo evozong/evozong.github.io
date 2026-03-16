@@ -159,14 +159,15 @@ body {
 /* Hero card */
 
 .hero-card {
-  background: var(--bg-card);
-  border-radius: 1.5rem;
-  border: 1px solid var(--border);
-  padding: 1rem;
-  box-shadow: var(--shadow-card);
   width: 100%;
-  max-width: 360px;
-  justify-self: center; /* keeps it centered in its grid column */
+  max-width: 260px;
+  justify-self: center;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
 }
 
 /* =========
