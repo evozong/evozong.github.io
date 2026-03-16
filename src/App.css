@@ -35,12 +35,26 @@ body {
   overflow-x: hidden; /* prevent horizontal scroll on tiny screens */
 }
 
-/* Root layout centers entire site */
+/* Three-column grid: side gutters + centered content column.
+   Nav and footer span all three (full-bleed).
+   Main sits in the center column (max 1100px, auto-centered). */
 #root {
-  max-width: 1100px;
-  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr min(100%, 1100px) 1fr;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+}
+
+.nav,
+.footer {
+  grid-column: 1 / -1;
+}
+
+.page-content {
+  grid-column: 2;
   padding: 0 2rem 2rem;
-  overflow-x: hidden; /* guard against any wide child */
+  min-width: 0;
 }
 
 /* =========
@@ -365,7 +379,7 @@ body {
 
 /* Tablet-ish */
 @media (max-width: 800px) {
-  #root {
+  .page-content {
     padding: 0 1.25rem 1.75rem;
   }
 
@@ -399,7 +413,7 @@ body {
     font-size: 0.85rem;
   }
 
-  #root {
+  .page-content {
     padding: 0 1rem 1.5rem;
   }
 
@@ -442,4 +456,116 @@ body {
   .chips {
     gap: 0.4rem;
   }
+}
+
+/* =========
+   Blog — Post Meta & Nav
+   ========= */
+
+.post-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.post-nav {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.post-nav:hover {
+  color: var(--primary-hover);
+}
+
+/* =========
+   Blog — Prose (markdown output)
+   ========= */
+
+.prose {
+  max-width: 68ch;
+  line-height: 1.75;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.prose h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 0.6rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+.prose h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.4rem;
+}
+
+.prose p {
+  margin: 0.75rem 0;
+  color: var(--text);
+}
+
+.prose a {
+  color: var(--primary);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  color: var(--primary-hover);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+  margin: 0.75rem 0;
+}
+
+.prose li {
+  margin-bottom: 0.35rem;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--primary);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text-muted);
+  background: var(--chip-bg);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+  background: #f1f5f9;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.prose pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+  font-size: 0.875rem;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
 }
