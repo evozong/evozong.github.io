@@ -18,10 +18,9 @@ type Experience = {
 
 const projects: Project[] = [
   {
-    name: 'TBD',
-    description: 'A project.',
-    /*tech: ["React", "TypeScript"],*/
-    link: 'https://www.zongyaomao.com',
+    name: 'Math Drills',
+    description: 'A speed math exercise I built for my kids to practice addition, subtraction, and multiplication. My record stands at ~14s — they haven\'t beaten it yet!',
+    link: 'https://www.zongyaomao.com/math-test/',
   },
   {
     name: 'TBD',
@@ -168,31 +167,32 @@ const Portfolio: React.FC = () => {
       <section className="section" id="projects">
         <h2>Projects</h2>
         <div className="grid">
-          {projects.map((project, i) => (
-            <article key={i} className="card">
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              {project.tech && (
-                <div className="chips">
-                  {project.tech.map((t) => (
-                    <span key={t} className="chip chip-small">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              )}
-              {project.link && (
-                <a
-                  href={project.link}
-                  className="card-link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View project →
-                </a>
-              )}
-            </article>
-          ))}
+          {projects.map((project, i) => {
+            const inner = (
+              <>
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                {project.tech && (
+                  <div className="chips">
+                    {project.tech.map((t) => (
+                      <span key={t} className="chip chip-small">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </>
+            );
+            return project.link ? (
+              <a key={i} href={project.link} className="card" target="_blank" rel="noreferrer" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                {inner}
+              </a>
+            ) : (
+              <article key={i} className="card">
+                {inner}
+              </article>
+            );
+          })}
         </div>
       </section>
 
