@@ -9,7 +9,7 @@ const BlogList: React.FC = () => {
   return (
     <section className="section">
       <h2>Blog</h2>
-      <div className="grid">
+      <div className="stack">
         {sorted.map((post) => (
           <article key={post.slug} className="card">
             <p className="post-meta">{post.date}</p>
