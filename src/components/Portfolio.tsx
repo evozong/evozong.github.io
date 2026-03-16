@@ -203,28 +203,6 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="section" id="contact">
-        <h2>Contact</h2>
-        <div className="contact-links">
-          <a
-            href="https://www.linkedin.com/in/zongyaomao"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn primary"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/evozong"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn secondary"
-          >
-            GitHub
-          </a>
-        </div>
-      </section>
     </>
   );
 };
