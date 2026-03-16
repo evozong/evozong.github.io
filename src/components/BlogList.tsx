@@ -11,14 +11,11 @@ const BlogList: React.FC = () => {
       <h2>Blog</h2>
       <div className="stack">
         {sorted.map((post) => (
-          <article key={post.slug} className="card">
+          <Link key={post.slug} href={`/blog/${post.slug}`} className="card card-link">
             <p className="post-meta">{post.date}</p>
             <h3>{post.title}</h3>
             <p>{post.description}</p>
-            <Link href={`/blog/${post.slug}`} className="card-link">
-              Read post →
-            </Link>
-          </article>
+          </Link>
         ))}
       </div>
     </section>
