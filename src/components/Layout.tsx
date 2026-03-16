@@ -6,7 +6,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <header className="nav">
         <div className="nav-inner">
           <div className="nav-left">
-            <a href="/" style={{ textDecoration: 'none' }}>
+            <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <img src="/favicon-64.svg" alt="" width="24" height="24" />
               <span className="logo">Zongyao Mao</span>
             </a>
           </div>
