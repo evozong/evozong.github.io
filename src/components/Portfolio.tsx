@@ -111,14 +111,7 @@ const Portfolio: React.FC = () => {
             I build reliable, scalable software and love turning complex
             problems into simple, elegant solutions.
           </p>
-          <div className="hero-actions">
-            <a href="#projects" className="btn primary">
-              View projects
-            </a>
-            <a href="#contact" className="btn secondary">
-              Contact me
-            </a>
-          </div>
+
           <div className="hero-meta">
             <span>📍 Location: Singapore</span>
             <span>💼 Focus: Backend / Data</span>
