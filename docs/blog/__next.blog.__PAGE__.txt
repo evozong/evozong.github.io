@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[22016,["/_next/static/chunks/135aa1e47e43b074.js"],""]
-3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/0bd6498bda341889.js"],"OutletBoundary"]
+2:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"HsqV0oL-aXgxutQr1f6Gw","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"section","children":[["$","h2",null,{"children":"Blog"}],["$","div",null,{"className":"grid","children":[["$","article","2026-03-16-hello-world",{"className":"card","children":[["$","p",null,{"className":"post-meta","children":"2026-03-16"}],["$","h3",null,{"children":"Hello World!"}],["$","p",null,{"children":"First post on my new blog — what to expect and a bit about me."}],["$","$L2",null,{"href":"/blog/2026-03-16-hello-world","className":"card-link","children":"Read post →"}]]}]]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"8mX2xD373NqpwzNCDWx3j","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"section","children":[["$","h2",null,{"children":"Blog"}],["$","div",null,{"className":"grid","children":[["$","article","2026-03-16-hello-world",{"className":"card","children":[["$","p",null,{"className":"post-meta","children":"2026-03-16"}],["$","h3",null,{"children":"Hello World!"}],["$","p",null,{"children":"First post on my new blog — what to expect and a bit about me."}],["$","$L2",null,{"href":"/blog/2026-03-16-hello-world","className":"card-link","children":"Read post →"}]]}]]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
